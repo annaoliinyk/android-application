@@ -9,13 +9,13 @@
     tools:context=".java.MainActivity">
 
     <EditText
-        android:id="@+id/editTextEnterAddressee"
+        android:id="@+id/editTextEmail"
         android:layout_width="320dp"
         android:layout_height="75dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="@string/enter_email"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:textColorHint="#000000"
         android:textSize="24sp"
