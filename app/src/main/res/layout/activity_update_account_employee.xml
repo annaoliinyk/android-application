@@ -47,7 +47,7 @@
         android:layout_width="319dp"
         android:layout_height="276dp"
         android:layout_marginBottom="28dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintBottom_toTopOf="@+id/buttonExit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ProfileDescription"
@@ -55,7 +55,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/buttonUpdate"
         android:layout_width="150dp"
         android:layout_height="65dp"
         android:background="#995A5656"
@@ -70,7 +70,7 @@
         app:layout_constraintVertical_bias="0.9" />
 
     <Button
-        android:id="@+id/buttonSubmit"
+        android:id="@+id/buttonExit"
         android:layout_width="150dp"
         android:layout_height="65dp"
         android:text="@string/exit_button"

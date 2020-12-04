@@ -15,7 +15,7 @@
         android:text="@string/update_listings"
         android:textColor="#FFF"
         android:textSize="28sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintBottom_toTopOf="@+id/buttonUpdateListings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.408"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +29,7 @@
         android:layout_height="50dp"
         android:layout_gravity='center'
         android:background="#504A4A"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintBottom_toTopOf="@+id/buttonExitListings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
         android:textAlignment="center"
         android:textColor="#000"
         android:textSize="32sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintBottom_toTopOf="@+id/buttonExitListings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SpinnerListings"
@@ -54,7 +54,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/buttonUpdateListings"
         android:layout_width="150dp"
         android:layout_height="65dp"
         android:background="#995A5656"
@@ -69,7 +69,7 @@
         app:layout_constraintVertical_bias="0.9" />
 
     <Button
-        android:id="@+id/buttonSubmit"
+        android:id="@+id/buttonExitListings"
         android:layout_width="150dp"
         android:layout_height="65dp"
         android:text="@string/exit_Button"
@@ -87,7 +87,7 @@
         android:id="@+id/listWithSkillsLevels"
         android:layout_width="306dp"
         android:layout_height="241dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintBottom_toTopOf="@+id/buttonExitListings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"

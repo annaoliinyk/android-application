@@ -45,7 +45,7 @@
         android:textAlignment="center"
         android:textColorHint="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCreateAccount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,7 +64,7 @@
         android:textAlignment="center"
         android:textColorHint="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCreateAccount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +83,7 @@
         android:textAlignment="center"
         android:textColorHint="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCreateAccount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +93,7 @@
         android:autofillHints="" />
 
     <Button
-        android:id="@+id/buttonSubmit"
+        android:id="@+id/buttonCreateAccount"
         android:layout_width="258dp"
         android:layout_height="71dp"
         android:background="#995A5656"
