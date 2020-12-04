@@ -30,7 +30,6 @@
         android:text="New message"
         android:textColor="#FFFFFF"
         android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/_dynamic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="parent"
