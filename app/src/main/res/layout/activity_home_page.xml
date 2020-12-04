@@ -5,21 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".java.HomePageActivity"
-    android:background="@drawable/background_with_logo"
-    >
+    android:background="@drawable/background_with_logo">
 
     <Button
         android:id="@+id/browseButton"
         android:layout_width="145dp"
         android:layout_height="55dp"
         android:background="#995A5656"
-        android:text="Browse"
+        android:text="@string/browse"
         android:textColor="#FFFFFF"
-        android:textSize="24dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBrowse"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
 
@@ -28,12 +27,12 @@
         android:layout_width="145dp"
         android:layout_height="55dp"
         android:background="#995A5656"
-        android:text="logout"
+        android:text="@string/logout"
         android:textColor="#FFFFFF"
-        android:textSize="24dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLogout"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.81" />
 
@@ -42,13 +41,13 @@
         android:layout_width="145dp"
         android:layout_height="55dp"
         android:background="#995A5656"
-        android:text="Update"
+        android:text="@string/update"
         android:textColor="#FFFFFF"
-        android:textSize="24dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/logoutButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imageViewUpdate"
         app:layout_constraintTop_toBottomOf="@+id/browseButton"
         app:layout_constraintVertical_bias="0.757" />
 
@@ -57,18 +56,18 @@
         android:layout_width="145dp"
         android:layout_height="55dp"
         android:background="#995A5656"
-        android:text="Inbox"
+        android:text="@string/inbox"
         android:textColor="#FFFFFF"
-        android:textSize="24dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/logoutButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInbox"
         app:layout_constraintTop_toBottomOf="@+id/browseButton"
         app:layout_constraintVertical_bias="0.238" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageViewBrowse"
         android:layout_width="85dp"
         android:layout_height="85dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,34 +76,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.292"
-        app:srcCompat="@drawable/homepage_pic1" />
+        app:srcCompat="@drawable/homepage_pic1"
+        tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageViewInbox"
         android:layout_width="85dp"
         android:layout_height="85dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewLogout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBrowse"
         app:layout_constraintVertical_bias="0.156"
-        app:srcCompat="@drawable/homepage_pic2" />
+        app:srcCompat="@drawable/homepage_pic2"
+        tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imageViewUpdate"
         android:layout_width="85dp"
         android:layout_height="85dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewLogout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBrowse"
         app:layout_constraintVertical_bias="0.849"
-        app:srcCompat="@drawable/homepage_pic3" />
+        app:srcCompat="@drawable/homepage_pic3"
+        tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageViewLogout"
         android:layout_width="85dp"
         android:layout_height="85dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -113,6 +115,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.823"
-        app:srcCompat="@drawable/homepage_pic4" />
+        app:srcCompat="@drawable/homepage_pic4"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,13 +10,13 @@
     tools:context=".java.UpdateAccountEmployee">
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/textEditTitle"
         android:layout_width="244dp"
         android:layout_height="54dp"
-        android:text="Update profile"
+        android:text="@string/update_profile"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="36dp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -32,20 +32,22 @@
         android:layout_marginTop="8dp"
         android:background="#FFFFFF"
         android:ems="10"
-        android:hint="Profile description"
+        android:hint="@string/profile_description"
         android:textAlignment="center"
         android:textColorHint="#000000"
-        android:textSize="24dp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintTop_toBottomOf="@+id/textEditTitle"
+        android:importantForAutofill="no"
+        android:inputType="text" />
 
     <ListView
         android:id="@+id/listWithSkillsLevels"
         android:layout_width="319dp"
         android:layout_height="276dp"
         android:layout_marginBottom="28dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCreateAcc"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ProfileDescription"
@@ -57,9 +59,9 @@
         android:layout_width="150dp"
         android:layout_height="65dp"
         android:background="#995A5656"
-        android:text="Update"
+        android:text="@string/update"
         android:textColor="#FFFFFF"
-        android:textSize="28dp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
@@ -68,13 +70,13 @@
         app:layout_constraintVertical_bias="0.9" />
 
     <Button
-        android:id="@+id/buttonCreateAcc"
+        android:id="@+id/buttonSubmit"
         android:layout_width="150dp"
         android:layout_height="65dp"
-        android:text="Exit"
+        android:text="@string/exit_button"
         android:background="#995A5656"
         android:textColor="#FFFFFF"
-        android:textSize="28dp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.85"

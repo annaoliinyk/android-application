@@ -8,24 +8,13 @@
     android:background="@drawable/background"
     tools:context=".java.AddSkillEmployer">
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="331dp"
-        android:layout_height="73dp"
-        android:background="#504A4A"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCreateAcc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        tools:ignore="MissingConstraints" />
-
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add skill or competency"
+        android:text="@string/add_skill_or_competency"
         android:textColor="#FFFF"
-        android:textSize="32dp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,55 +23,66 @@
         tools:ignore="MissingConstraints" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerSkillOrCompetency"
         android:layout_width="331dp"
         android:layout_height="71dp"
         android:background="#504A4A"
-        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLevelOfCompetency"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSkillOrCompetency"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textViewSkillOrCompetency"
         android:layout_width="338dp"
         android:layout_height="58dp"
         android:layout_marginTop="54dp"
         android:background="#FFF"
-        android:text="Select skill or competency:"
+        android:text="@string/select_skill_or_competency"
         android:textColor="#000"
-        android:textSize="28dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCreateAcc"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/textViewLevelOfCompetency"
         android:layout_width="335dp"
         android:layout_height="57dp"
         android:background="#FFF"
-        android:text="Select level of competency:"
+        android:text="@string/select_level_of_competency"
         android:textColor="#000"
-        android:textSize="27dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCreateAcc"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
         app:layout_constraintVertical_bias="0.633"
         tools:ignore="MissingConstraints" />
 
+    <Spinner
+        android:id="@+id/spinnerLevelOfCompetency"
+        android:layout_width="331dp"
+        android:layout_height="73dp"
+        android:background="#504A4A"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLevelOfCompetency"
+        tools:ignore="MissingConstraints" />
+
     <Button
-        android:id="@+id/buttonCreateAcc"
+        android:id="@+id/buttonSubmit"
         android:layout_width="150dp"
         android:layout_height="65dp"
         android:background="#995A5656"
-        android:text="SUBMIT"
+        android:text="@string/submit"
         android:textColor="#FFFFFF"
-        android:textSize="28dp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
