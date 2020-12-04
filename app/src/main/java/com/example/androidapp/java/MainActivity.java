@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText eEmail;
     private EditText ePassword;
-    private Button eLogin;
+    private Button login;
+    private Button create;
 
     private String Email = "admin@gmail.com";
     private String Password = "12345678";
@@ -27,11 +28,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        eEmail = findViewById(R.id.enterAddressee);
-        ePassword = findViewById(R.id.password);
-        eLogin = findViewById(R.id.buttonLogin);
+        eEmail = findViewById(R.id.editTextEnterAddressee);
+        ePassword = findViewById(R.id.editTextPassword);
+        login = findViewById(R.id.buttonLogin);
+        create = findViewById(R.id.buttonCreate);
 
-        eLogin.setOnClickListener(new View.OnClickListener(){
+        login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 String inputEmail = eEmail.getText().toString();
@@ -55,6 +57,14 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                 }
+            }
+        });
+
+        create.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, CreateAccount.class);
+                startActivity(intent);
             }
         });
     }
