@@ -41,17 +41,18 @@
 
     <EditText
         android:id="@+id/textViewTheWholeMessage"
-        android:layout_width="350dp"
-        android:layout_height="400dp"
+        android:layout_width="339dp"
+        android:layout_height="399dp"
         android:background="#FFF"
-        android:hint="Message"
+        android:gravity="top"
+        android:hint=" Message"
         android:textColor="#000000"
+        android:textSize="32dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonApply"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        app:layout_constraintVertical_bias="0.768"
+        app:layout_constraintVertical_bias="0.753"
         tools:ignore="MissingConstraints" />
 
     <Button
